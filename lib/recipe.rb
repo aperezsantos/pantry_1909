@@ -20,7 +20,10 @@ class Recipe
     end
   end
 
-  # def total_calories
-  # end
-
+  def total_calories
+    ingredients.map do |ingredient|
+      ingredient.calories * @ingredients_required[ingredient]
+      # require "pry"; binding.pry
+    end.sum
+  end
 end
