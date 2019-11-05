@@ -13,6 +13,11 @@ class Pantry
     end
   end
 
-  
+  def restock(ingredient_name, amount)
+    @stock[ingredient_name] = amount
+    # require "pry"; binding.pry
+    # @ingredients_required[ingredient] = amount
+  end
+
 
 end
