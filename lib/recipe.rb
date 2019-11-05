@@ -14,4 +14,13 @@ class Recipe
     @ingredients_required[ingredient_requirement]
   end
 
+  def ingredients
+    @ingredients_required.map do |ingredient_object, amount_required|
+      ingredient_object
+    end
+  end
+
+  # def total_calories
+  # end
+
 end
